@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <!-- Metaetiqueta viewport para mejorar la visualización en móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>San Luis Marketplaces</title>
   <style>
     /* Estilos globales y creativos */
@@ -100,6 +102,16 @@
       margin: 1rem;
       font-size: 0.9rem;
       opacity: 0.8;
+    }
+
+    /* Media Query para pantallas pequeñas */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .market-card {
+        width: 100%;
+      }
     }
   </style>
 </head>
