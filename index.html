@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>San Luis Marketplaces</title>
+  <style>
+    /* Estilos globales y creativos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .market-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      gap: 1rem;
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    .market-card {
+      background-color: #ffffff;
+      color: #333333;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .market-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      background-color: #f4a261;
+      padding: 1rem;
+    }
+
+    .card-header h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-content {
+      padding: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      line-height: 1.3rem;
+    }
+
+    /* Estilo para los enlaces */
+    .card-link {
+      font-weight: bold;
+      color: #264653;
+      text-decoration: none;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Pie de página */
+    footer {
+      margin: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>San Luis Marketplaces</h1>
+    <p>Explora y apoya los comercios locales de Tilisarao y Concarán, San Luis.</p>
+  </header>
+
+  <div class="market-container">
+    <!-- Tarjeta Tilisarao Market -->
+    <a href="https://tilisaraomarket.github.io/Tilisarao-Market/" class="market-card" target="_blank" rel="noopener noreferrer">
+      <div class="card-header">
+        <h2>Tilisarao Market</h2>
+      </div>
+      <div class="card-content">
+        <p>
+          Visita el marketplace diseñado para la comunidad de Tilisarao. 
+          Allí encontrarás una gran variedad de productos y servicios disponibles.
+        </p>
+        <span class="card-link">Ir a Tilisarao Market &rarr;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta Concarán Market -->
+    <a href="https://concaranmarket.github.io/Concaran-Market/" class="market-card" target="_blank" rel="noopener noreferrer">
+      <div class="card-header">
+        <h2>Concarán Market</h2>
+      </div>
+      <div class="card-content">
+        <p>
+          Conoce el marketplace de Concarán. Encuentra fácilmente productos 
+          y servicios locales para apoyar a esta comunidad de San Luis.
+        </p>
+        <span class="card-link">Ir a Concarán Market &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2023 San Luis Marketplaces. Fomentando el comercio local.
+  </footer>
+
+</body>
+</html>
+</qodoArtifact>
