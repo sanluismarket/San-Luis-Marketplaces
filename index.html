@@ -2,15 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <!-- Metaetiqueta viewport para mejorar la visualización en móviles con zoom habilitado -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>San Luis Marketplaces</title>
   <style>
-    /* Estilos globales y creativos */
-    html {
-      font-size: 16px; /* Tamaño base de fuente mayor para mejorar legibilidad en móvil */
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -22,42 +16,43 @@
       background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
       color: #ffffff;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      width: 100%;
+      padding: 1rem;
     }
 
     header {
-      margin: 1rem 0;
+      width: 100%;
+      padding: 1rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 5vw, 2rem);
       margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1rem;
+      font-size: clamp(0.9rem, 3vw, 1rem);
       opacity: 0.8;
+      padding: 0 1rem;
     }
 
     .market-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 100%;
       max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
-      margin: 1rem;
-      padding: 1rem;
+      padding: 0.5rem;
     }
 
     .market-card {
       background-color: #ffffff;
       color: #333333;
       border-radius: 8px;
-      width: 300px;
+      width: 100%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease-in-out;
       text-decoration: none;
@@ -76,7 +71,7 @@
     }
 
     .card-header h2 {
-      font-size: 1.25rem;
+      font-size: clamp(1.1rem, 4vw, 1.25rem);
       margin-bottom: 0.2rem;
     }
 
@@ -87,48 +82,28 @@
 
     .card-content p {
       margin-bottom: 1rem;
-      line-height: 1.3rem;
+      line-height: 1.4;
+      font-size: clamp(0.9rem, 3vw, 1rem);
     }
 
-    /* Estilo para los enlaces */
     .card-link {
       font-weight: bold;
       color: #264653;
       text-decoration: none;
+      font-size: clamp(0.9rem, 3vw, 1rem);
     }
 
     .card-link:hover {
       text-decoration: underline;
     }
 
-    /* Pie de página */
     footer {
-      margin: 1rem;
-      font-size: 0.9rem;
-      opacity: 0.8;
+      width: 100%;
       text-align: center;
-    }
-
-    /* Media Query para pantallas pequeñas */
-    @media (max-width: 600px) {
-      html {
-        font-size: 18px; /* Aumenta más el tamaño base en móviles */
-      }
-      header h1 {
-        font-size: 2rem; /* Mantiene un buen tamaño por la base mayor */
-      }
-      header p {
-        font-size: 1.1rem;
-      }
-      .market-card {
-        width: 100%; /* Se expande para ocupar todo el ancho disponible */
-      }
-      .card-header h2 {
-        font-size: 1.4rem;
-      }
-      .card-content p {
-        font-size: 1.1rem;
-      }
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -174,3 +149,4 @@
 </body>
 </html>
 </qodoArtifact>
+
