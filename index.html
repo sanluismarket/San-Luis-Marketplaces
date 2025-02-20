@@ -2,11 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <!-- Metaetiqueta viewport para mejorar la visualización en móviles -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Metaetiqueta viewport para mejorar la visualización en móviles con zoom habilitado -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>San Luis Marketplaces</title>
   <style>
     /* Estilos globales y creativos */
+    html {
+      font-size: 16px; /* Tamaño base de fuente mayor para mejorar legibilidad en móvil */
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -102,30 +106,33 @@
       margin: 1rem;
       font-size: 0.9rem;
       opacity: 0.8;
+      text-align: center;
     }
 
     /* Media Query para pantallas pequeñas */
     @media (max-width: 600px) {
+      html {
+        font-size: 18px; /* Aumenta más el tamaño base en móviles */
+      }
       header h1 {
-        font-size: 1.8rem; /* Aumentamos el tamaño para móviles */
+        font-size: 2rem; /* Mantiene un buen tamaño por la base mayor */
       }
       header p {
-        font-size: 1.1rem; /* Ajuste para mejorar legibilidad */
+        font-size: 1.1rem;
       }
       .market-card {
         width: 100%; /* Se expande para ocupar todo el ancho disponible */
       }
       .card-header h2 {
-        font-size: 1.4rem; /* Aumentamos ligeramente el título de la tarjeta */
+        font-size: 1.4rem;
       }
       .card-content p {
-        font-size: 1rem; /* Aumentamos el texto dentro de la tarjeta */
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>San Luis Marketplaces</h1>
     <p>Explora y apoya los comercios locales de Tilisarao y Concarán, San Luis.</p>
@@ -139,7 +146,7 @@
       </div>
       <div class="card-content">
         <p>
-          Visita el marketplace diseñado para la comunidad de Tilisarao. 
+          Visita el marketplace diseñado para la comunidad de Tilisarao.
           Allí encontrarás una gran variedad de productos y servicios disponibles.
         </p>
         <span class="card-link">Ir a Tilisarao Market &rarr;</span>
@@ -153,7 +160,7 @@
       </div>
       <div class="card-content">
         <p>
-          Conoce el marketplace de Concarán. Encuentra fácilmente productos 
+          Conoce el marketplace de Concarán. Encuentra fácilmente productos
           y servicios locales para apoyar a esta comunidad de San Luis.
         </p>
         <span class="card-link">Ir a Concarán Market &rarr;</span>
@@ -164,7 +171,6 @@
   <footer>
     &copy; 2023 San Luis Marketplaces. Fomentando el comercio local.
   </footer>
-
 </body>
 </html>
 </qodoArtifact>
